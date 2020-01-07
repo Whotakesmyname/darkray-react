@@ -1,0 +1,37 @@
+.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 50vh;
+    width: 70vw;
+}
+
+.banner-header {
+    height: 35%;
+}
+
+.banner-title {
+    float: left;
+}
+
+.banner-badge {
+    float: left;
+}
+
+.banner-detail {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 17px;
+    color: white;
+    font-size: larger;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.banner-detail:hover {
+    background: rgba(0, 0, 0, 1);
+}
