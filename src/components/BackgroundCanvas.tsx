@@ -10,8 +10,8 @@ interface BackgroundCanvasState {
 export default class BackgroundCanvas extends React.Component<{}, BackgroundCanvasState> {
     ref: HTMLCanvasElement | null = null
 
-    constructor() {
-        super({})
+    constructor(props: {}) {
+        super(props)
         this.state = {
             height: 100,
             width: 100
