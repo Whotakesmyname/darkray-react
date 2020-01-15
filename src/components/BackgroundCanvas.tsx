@@ -13,8 +13,8 @@ export default class BackgroundCanvas extends React.Component<{}, BackgroundCanv
     constructor(props: {}) {
         super(props)
         this.state = {
-            height: 100,
-            width: 100
+            height: 0,
+            width: 0
         }
     }
 
@@ -30,6 +30,7 @@ export default class BackgroundCanvas extends React.Component<{}, BackgroundCanv
     }
 
     componentDidMount() {
+        this.resizeHandler()
         window.addEventListener("resize", throttle(this.resizeHandler, this.INTERVAL))
     }
 

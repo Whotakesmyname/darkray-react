@@ -18,3 +18,11 @@ export function throttle(func: (...args: any[]) => void, interval: number): (...
         }
     }
 }
+
+/**
+ * randomChar generates a string of given length with random characters
+ * @param length The expected length of the output string
+ */
+export function randomChar(length: number): string {
+    return String.fromCharCode(...Array.from({ length: length }, _ => Math.floor(Math.random() * 26 + 65)))
+}
